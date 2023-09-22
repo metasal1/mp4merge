@@ -10,7 +10,6 @@ function mergeVideoAndAudio(videoPath, audioPath, outputPath) {
         .videoCodec('copy')
         .input(audioPath)
         .audioCodec('aac')
-        // .map('0:v:0')
         .on('end', () => {
             console.log('Merging finished !');
         })
