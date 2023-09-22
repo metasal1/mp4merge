@@ -68,7 +68,7 @@ app.get('/', async (req, res) => {
             });
         });
     }).on('error', (err) => {
-        fs.unlink(filePath); // Delete the file on error
+        // fs.unlink(filePath); // Delete the file on error
         console.error(`File download error: ${err.message}`);
         res.status(500).json({ error: err.message });
     });
