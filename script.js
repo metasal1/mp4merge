@@ -74,7 +74,7 @@ app.get('/', async (req, res) => {
     });
 });
 
-app.listen(3001, () => console.log('App is listening'));
+app.listen(3000, () => console.log('App is listening'));
 
 // httpsServer.listen(443, () => {
 //     console.log('HTTPS Server running on port 443');
